@@ -7,21 +7,25 @@
  <title>recetas argentinas</title>
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet"href="css/estilo.css">
+    <script>
+      alert("Bienvenidos a mi sitio web")
+    </script>
     </head>
     <body>
     <header>
         <img src="imagenes/logo" class="logo" alt="logo">
     <h1>Recetas Argentinas</h1>
+   
     </header>
     <nav>
-      
+       <button onclick="byn()"> Modo oscuro</button>
        
 
     </nav>
     <br>
     <br>
     <section class="s1">
-        <p> El locro salteño es uno de los platos más representativos de la cocina tradicional del norte argentino, profundamente ligado a la historia y la identidad cultural de la región. Su origen se remonta a las comunidades indígenas andinas, que preparaban guisos a base de maíz, zapallo y carnes, aprovechando los ingredientes disponibles en la zona. Con el paso del tiempo, la receta fue incorporando nuevos elementos traídos durante la época colonial, dando lugar al locro que hoy conocemos.
+        <p id="p"> El locro salteño es uno de los platos más representativos de la cocina tradicional del norte argentino, profundamente ligado a la historia y la identidad cultural de la región. Su origen se remonta a las comunidades indígenas andinas, que preparaban guisos a base de maíz, zapallo y carnes, aprovechando los ingredientes disponibles en la zona. Con el paso del tiempo, la receta fue incorporando nuevos elementos traídos durante la época colonial, dando lugar al locro que hoy conocemos.
 
 Como receta, el locro salteño se caracteriza por su cocción lenta y su sabor intenso. Se elabora principalmente con maíz blanco, porotos, zapallo y distintas carnes, que al cocinarse durante varias horas logran una textura espesa y reconfortante. Es un plato ideal para compartir en fechas patrias y reuniones familiares, ya que simboliza unión, tradición y el espíritu de la cocina argentina.
 </p>
@@ -31,7 +35,7 @@ Como receta, el locro salteño se caracteriza por su cocción lenta y su sabor i
          <br>
          <br>
          
-            <h2 class="red">Ingredientes
+            <h2 class="red" id="h2">Ingredientes
             <ul>
             <li>250gr de porotos blancos</li>
             <li>500 gr de zapallo criollo</li>
@@ -48,8 +52,8 @@ Como receta, el locro salteño se caracteriza por su cocción lenta y su sabor i
             <li>aceite o grasa vacuna</li> 
             </ul>
             <br>
-            <h2 class="blue"> Paso a paso</h2>
-            <ol>
+            <h2 class="blue" id="h3"> Paso a paso</h2>
+            <ol id="lista">
                 <li>Remojo: Dejar los porotos en remojo la noche anterior.</li>
                 <li>Cocciòn base: En una olla grande, hervir los porotos en abundante agua durante 45 min. </li>
                 <li>Agegar carnes: Incorporar las carnes cortadas en trozos y continuar la cocciòn a fuego lento.</li>
@@ -67,55 +71,63 @@ Como receta, el locro salteño se caracteriza por su cocción lenta y su sabor i
         
            
             <br>
-            <h2>un video que te puede ayudar</h2>
+            <h2 id="h4">un video que te puede ayudar</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/j7MhnqIzGPI?si=J9faX_F6cW56MvCh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br>
         <br>
         <section>
-            <h2>Otras recetas argentinas</h2>
+            <h2 id="h5">Otras recetas argentinas</h2>
 
            <div class="tarjetas">
+  <div class="container">
+    <div class="row g-3">
 
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/chorizo" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title">Chorizo a la pomarola</h5>
-      <p class="card-text">El chorizo a la pomarola es un plato clásico de la cocina argentina que combina la intensidad del chorizo con una salsa de tomate suave y bien condimentada. Ideal para compartir en familia, se destaca por su sabor casero y su simple preparación, convirtiéndose en una opción reconfortante y llena de tradición.
-</p>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img src="imagenes/chorizo" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Chorizo a la pomarola</h5>
+           <p class="card-text">El chorizo a la pomarola es un plato clásico de la cocina argentina que combina la intensidad del chorizo con una salsa de tomate suave y bien condimentada. Ideal para compartir en familia, se destaca por su sabor casero y su simple preparación, convirtiéndose en una opción reconfortante y llena de tradición.</p>
       <a href="https://youtu.be/66-gz0JB4TE" target="_blank">Ver receta</a>
+     </div>
+      </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img src="imagenes/empanadas" class="card-img-top" alt="">
+          <div class="card-body">
+       <h5 class="card-title">Empanadas Salteñas</h5>
+            <p class="card-text">Las empanadas salteñas son una de las recetas más emblemáticas del norte argentino. Se caracterizan por su relleno jugoso de carne cortada a cuchillo, papa y especias tradicionales, envuelto en una masa tierna y dorada que concentra todo el sabor y la identidad de Salta en cada bocado.</p>
+       <a href="https://youtu.be/eWPzfMwVN3w" target="_blank">Ver receta</a>
+       </div>
+       </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img src="imagenes/estofado" class="card-img-top" alt="">
+       <div class="card-body">
+            <h5 class="card-title">Estofado</h5>
+         <p class="card-text">El estofado es un plato clásico de la cocina casera, ideal para los días frescos. Se prepara con carne cocida lentamente junto a verduras y condimentos, logrando una textura tierna y una salsa espesa y sabrosa que concentra todo el sabor de una receta tradicional y reconfortante.</p>
+            <a href="https://youtu.be/MIyDuWwiqhY" target="_blank">Ver receta</a>
+      </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="card">
+          <img src="imagenes/puchero" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Puchero</h5>
+       <p class="card-text">El puchero es una receta tradicional y reconfortante de la cocina argentina. Elaborado con carnes, verduras y legumbres cocidas lentamente, se destaca por su sabor intenso y nutritivo, ideal para compartir en familia y disfrutar de un plato bien casero.</p>
+        <a href="https://youtu.be/oAIDYHyCGMA" target="_blank">Ver receta</a>
+      </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/empanadas" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title">Empanadas Salteñas</h5>
-      <p class="card-text">Las empanadas salteñas son una de las recetas más emblemáticas del norte argentino. Se caracterizan por su relleno jugoso de carne cortada a cuchillo, papa y especias tradicionales, envuelto en una masa tierna y dorada que concentra todo el sabor y la identidad de Salta en cada bocado.
-</p>
-      <a href="https://youtu.be/eWPzfMwVN3w" target="_blank">Ver receta</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/estofado" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title">Estofado</h5>
-      <p class="card-text">El estofado es un plato clásico de la cocina casera, ideal para los días frescos. Se prepara con carne cocida lentamente junto a verduras y condimentos, logrando una textura tierna y una salsa espesa y sabrosa que concentra todo el sabor de una receta tradicional y reconfortante.
-</p>
-      <a href="https://youtu.be/MIyDuWwiqhY" target="_blank">Ver receta</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="imagenes/puchero" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title">Puchero</h5>
-      <p class="card-text">El puchero es una receta tradicional y reconfortante de la cocina argentina. Elaborado con carnes, verduras y legumbres cocidas lentamente, se destaca por su sabor intenso y nutritivo, ideal para compartir en familia y disfrutar de un plato bien casero.
-</p>
-      <a href="https://youtu.be/oAIDYHyCGMA" target="_blank">Ver receta</a>
-    </div>
-  </div>
-
 </div>
 
            
@@ -143,9 +155,12 @@ Como receta, el locro salteño se caracteriza por su cocción lenta y su sabor i
 <footer>
 
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231807.5714096049!2d-65.5954447124807!3d-24.79568283652783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses!2sar!4v1761085662631!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+ <button class="botonf" onclick="Cartel()"> Conoceme</button>
 </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./js/javascript.js"></script>
 </body>
 
 </html>
